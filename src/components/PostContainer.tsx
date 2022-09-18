@@ -5,10 +5,11 @@ import { PostItem } from './PostItem'
 
 export default function PostContainer() {
 	const [limit, setLimit] = useState(100)
-	const [createPost, {}] = postAPI.useCreatePostMutation()
+	const [createPost, {error: createError, isLoading: isCreateLoadimg}] = postAPI.useCreatePostMutation()
 	const { data: posts, error, isLoading, refetch } = postAPI.useFetchAllPostsQuery(limit, {
 		// pollingInterval: 1000
 	})
+
 	const handleCreate = async () => {
 		const title = prompt('Type title of post', 'It`s a default title');
 		const body = prompt('Type body of post', 'It`s a default body');
@@ -16,8 +17,7 @@ export default function PostContainer() {
 	}
 	
 	return (
-		<>
-			<div className=' '>
+		<div className=' '>
 				<button onClick={() => handleCreate()}>Add new post</button>
 				{!posts && isLoading && <h1 className='grid place-items-center h-screen text-center'>Loading...</h1>}
 				{error && <h1 className='grid place-items-center h-screen text-center  text-red-400' >Error 404</h1>}
@@ -25,6 +25,5 @@ export default function PostContainer() {
 					<PostItem key={post.id} post={post}/>
 				)}
 			</div>
-		</>
 	)
 }
