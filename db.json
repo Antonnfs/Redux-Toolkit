@@ -1,49 +1,14 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "body": "typicode"
+      "title": "It`s a default title",
+      "body": "It`s a default body",
+      "id": 1
     },
     {
-      "id": 2,
-      "title": "json-server",
-      "body": "typicode"
-    },
-    {
-      "id": 3,
-      "title": "json-server",
-      "body": "typicode"
-    },
-    {
-      "id": 4,
-      "title": "json-server",
-      "body": "typicode"
-    },
-    {
-      "id": 5,
-      "title": "json-server",
-      "body": "typicode"
-    },
-    {
-      "id": 6,
-      "title": "json-server",
-      "body": "typicode"
-    },
-    {
-      "id": 7,
-      "title": "json-server",
-      "body": "typicode"
-    },
-    {
-      "id": 8,
-      "title": "json-server",
-      "body": "typicode"
-    },
-    {
-      "id": 9,
-      "title": "json-server",
-      "body": "typicode"
+      "title": "It`s a default title",
+      "body": "It`s a default body",
+      "id": 2
     },
     {
       "title": "It`s a default title",
@@ -51,7 +16,7 @@
       "id": 10
     },
     {
-      "title": "NEW NEW",
+      "title": "Default title",
       "body": "It`s a default body",
       "id": 11
     },
@@ -61,7 +26,7 @@
       "id": 12
     },
     {
-      "title": "It`s a default title",
+      "title": "It`s an updated default title",
       "body": "It`s a default body",
       "id": 13
     },
@@ -76,13 +41,7 @@
       "id": 15
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
+  "comments": [],
   "profile": {
     "name": "typicode"
   }
